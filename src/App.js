@@ -26,11 +26,9 @@ function App() {
           newChars.push(newWords[i]);
         };
         chars = (newChars);
-        console.log("schuffled");
       });
   };
   function styleText(){
-    console.log("styling");
     var targetDiv = document.getElementById("allChars");
     targetDiv.innerHTML = "";
     for(var i=Math.max(0,yellowIndex-40);i<yellowIndex && i<chars.length;i++){
@@ -120,20 +118,17 @@ function App() {
   }
   function handleStart(type){
     document.getElementById("allChars").innerHTML = "Loading...";
-    console.log("type: "+type);
     var hiddenElements = document.getElementsByClassName("afterGame");
     for(var i=0;i<hiddenElements.length;i++){
       hiddenElements[i].style.display = "none";
     }
     if(type=="start"){
       shuffleWords();
-      console.log("starting start");
       setTimeout(()=>{
         document.getElementById("startButton").style.display = "none";
         yellowIndex = 0;
         red_num = 0;
         part="during";
-        console.log("handle start");
         timeIsRunning = true;
         seconds_left = STARTING_TIME;
         document.getElementById("timer").innerHTML = seconds_left;
@@ -162,7 +157,6 @@ function App() {
       yellowIndex = 0;
       red_num = 0;
       part="during";
-      console.log("handle start");
       timeIsRunning = true;
       seconds_left = STARTING_TIME;
       document.getElementById("timer").innerHTML = seconds_left;

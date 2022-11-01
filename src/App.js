@@ -137,7 +137,6 @@ function App() {
           {
             part = "after";
             timeIsRunning = false;
-            alert("Time is up!");
             endGame();
             clearInterval(interval);
             seconds_left++;
@@ -165,7 +164,6 @@ function App() {
         {
           part = "after";
           timeIsRunning = false;
-          alert("Time is up!");
           endGame();
           clearInterval(interval);
           seconds_left++;

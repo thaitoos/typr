@@ -1,0 +1,58 @@
+
+/* dark mode */
+*{
+    background-color: #26262b;
+}
+#root{
+  height: 100%;
+}
+#main{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#topBar div{
+  display: inline;
+  margin: 0 10px;
+  text-align: left;
+}
+#main div {
+  color: rgb(223, 208, 208);
+}
+.body{
+  height: 100%;
+}
+.App {
+  color: #fff;
+  height: 100%;
+  font-size: calc(10px + 2vmin);
+}
+.typed{
+  font-size: 1.5em;
+  font-family: monospace;
+}
+.afterGame{
+  margin: 2%;
+}
+.btn{
+  margin: 2%;
+  border:2px solid #3c3c57;
+  border-radius: 5px;
+  padding: 5px 5px 10px 5px;
+  background-color: #323241;
+}
+.btn:hover{
+  background-color: #3c3c57;
+}
+.timeSwitch{
+  margin: 2%;
+  border:2px solid #3c3c57;
+  border-radius: 5px;
+  padding: 5px 5px 10px 5px;
+  background-color: #323241;
+}
+.timeSwitch:hover{
+  background-color: #3c3c57;
+}
